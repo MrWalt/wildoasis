@@ -13,7 +13,24 @@ const StyledAppLayout = styled.div`
 const Main = styled.main`
   background-color: var(--color-grey-50);
 
+  overflow: scroll;
   padding: 4rem 4.8rem 6.4rem;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+const Container = styled.div`
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 `;
 
 export default function AppLayout() {
@@ -23,7 +40,9 @@ export default function AppLayout() {
       <Sidebar />
 
       <Main>
-        <Outlet />
+        <Container>
+          <Outlet />
+        </Container>
       </Main>
     </StyledAppLayout>
   );
