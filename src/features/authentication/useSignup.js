@@ -10,6 +10,7 @@ export function useSignup() {
         "Account successfully created. Please verify the user's email address"
       );
     },
+    onError: () => toast.error("User with this email already exists"),
   });
 
   return { signUp, isLoading };
