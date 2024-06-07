@@ -29,7 +29,7 @@ export default function UserAvatar() {
   return (
     <StyledUserAvatar>
       <Avatar src={avatar || "default-user.jpg"} alt={`Image of ${fullName}`} />
-      <span>{fullName.split(" ").at(0)}</span>
+      <span>{fullName ? fullName?.split(" ").at(0) : "User"}</span>
     </StyledUserAvatar>
   );
 }
