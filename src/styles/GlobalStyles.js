@@ -224,6 +224,10 @@ const GlobalStyles = createGlobalStyle`
   --image-grayscale: 10%;
   --image-opacity: 90%;
   */
+
+  .recharts-tooltip-item-list {
+    color: #fff !important;
+  }
   `;
 
 export default GlobalStyles;
