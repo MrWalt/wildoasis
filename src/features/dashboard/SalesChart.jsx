@@ -116,6 +116,7 @@ export default function SalesChart({ bookings, numDays }) {
             contentStyle={{
               backgroundColor: colors.background,
               borderRadius: "var(--border-radius-lg)",
+              borderColor: "var(--color-grey-200)",
             }}
           />
           <CartesianGrid strokeDasharray="4" />

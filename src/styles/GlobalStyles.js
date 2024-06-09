@@ -225,8 +225,8 @@ const GlobalStyles = createGlobalStyle`
   --image-opacity: 90%;
   */
 
-  .recharts-tooltip-item-list {
-    color: #fff !important;
+  .recharts-default-tooltip li.recharts-tooltip-item {
+    color: var(--color-grey-700) !important;
   }
   `;
 

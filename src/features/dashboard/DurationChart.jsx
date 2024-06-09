@@ -180,6 +180,8 @@ export default function DurationChart({ confirmedStays }) {
           <Tooltip
             contentStyle={{
               borderRadius: "var(--border-radius-md)",
+              backgroundColor: "var(--color-grey-0)",
+              borderColor: "var(--color-grey-200)",
             }}
           />
         </PieChart>
